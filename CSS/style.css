@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/* Variables */
+/* Para las cajas */
+.box {
+  width: 300px;
+  height: 100px;
+}
+
+/***************************************************/
+/*Uso de Each y Maps*/
+.icon-20px {
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+.icon-30px {
+  font-size: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+.icon-40px {
+  font-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.icon-50px {
+  font-size: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+.icon-70px {
+  font-size: 70px;
+  height: 70px;
+  width: 70px;
+}
+
+.icon-80px {
+  font-size: 80px;
+  height: 80px;
+  width: 80px;
+}
+
+.btn--ins {
+  background-color: orange;
+}
+
+.btn--fb {
+  background-color: blue;
+}
+
+.btn--mail {
+  background-color: rgba(250, 12, 12, 0.849);
+}
+
+/* botones redes */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Botones */
+header {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+body {
+  background-color: white;
+}
+
+section h4 {
+  font-family: "Inknut Antiqua";
+  font-family: "Inknut Antiqua";
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* Todo lo que tenga que ver con footer */
+footer {
+  background-color: darkgray;
+  width: 100%;
+}
+
+/* Imagenes de background con texto*/
+.portada {
+  background-position: 100%;
+  width: 100%;
+}
+
+/* Index: Hamlin, portada*/
+.textoportada {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-color: darkgray;
+}
+
+/* texto central */
+.centered {
+  position: absolute;
+  font-family: "Inknut Antiqua";
+  font-family: "Inknut Antiqua";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 4em;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*mesa verde portada*/
+.top-left {
+  position: absolute;
+  top: 90px;
+  left: 16px;
+  font-size: 2em;
+  text-align: left;
+  margin-right: 35%;
+}
+
+/* Porfolio: Mesa verde */
+/* Responsive para texto central de Hamlin Hamlin & McGuill */
+@media only screen and (max-width: 1800px) {
+  .top-left {
+    margin-right: 45%;
+    top: 80px;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .top-left {
+    margin-right: 55%;
+    top: 25px;
+  }
+}
+@media only screen and (max-width: 1450px) {
+  .centered {
+    font-size: 3em;
+  }
+  .top-left {
+    margin-right: 55%;
+    top: 25px;
+    font-size: 1.7em;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .top-left {
+    font-size: 1.7em;
+    margin-right: 45%;
+    top: 20px;
+  }
+}
+@media only screen and (max-width: 1075px) {
+  .top-left {
+    font-size: 1.5em;
+    margin-right: 35%;
+    top: 20px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .centered {
+    font-size: 2em;
+  }
+  .top-left {
+    font-size: 1.2em;
+    margin-right: 35%;
+    top: 20px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .top-left {
+    font-size: 1em;
+    margin-right: 35%;
+    top: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .centered {
+    font-size: 1.55em;
+  }
+}
+/* Clases que estan en Index*/
+.objetivo {
+  padding: 2em;
+  background-color: rgb(76, 47, 39);
+}
+
+.objetivo h1 {
+  font-family: "Inknut Antiqua";
+  font-size: 2em;
+  font-family: "Inknut Antiqua";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  color: white;
+}
+
+/* Aca adapte el tamaño del texto porque en un celular es demasiado grande*/
+@media only screen and (max-width: 900px) {
+  .objetivo h1 {
+    font-family: "Inknut Antiqua";
+    font-size: 18px;
+    font-family: "Inknut Antiqua";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    color: white;
+  }
+}
+/* Texto que aparece en FAQs */
+.faqs {
+  font-family: "Inknut Antiqua";
+  font-size: 2em;
+  font-family: "Inknut Antiqua";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  text-align: center;
+}
+
+.faqs li {
+  font-size: 20px;
+}
+
+.faqs li p {
+  font-size: 12px;
+}
+
+/*Contacto*/
+.formulario {
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+
+/* El mapa que esta en "La Oficina" */
+.mapa iframe {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
