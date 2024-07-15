@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/style.css">
+    
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap"
@@ -19,7 +20,8 @@
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">+54 2920 162423</a>
+              <a class="navbar-brand" href="#"><img src="../img/HHM.svg" alt="Logo" width="60" height="54" class="d-inline-block align-text-top"></a>
+              <h1 class="navbartitulo">Contacto</h1>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -62,41 +64,106 @@
        
     
     </header>
-
+    <br><br><br><br><br><br>
      <!-- Formulario de contacto, con su propia clase-->
+   
+   <div class="row">
+    <div class="col-6">
+        <img src="../img/Estatua.png">
+    </div>
 
-    <section class="formulario">
-    <form action="form.php" method="POST">
 
-        <select name="" id="">
-            <option value="">Motivo de su consulta</option>
-            <option value="">Penal</option>
-            <option value="">Social</option>
-            <option value="">Corporativo</option>
-            <option value="">Edad avanzada</option>
-            <option value="">Seguridad</option>
-        </select>
-        
-        <label for="">Nombre</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Juan">
 
-        <label for="">Apellido</label>
-        <input type="text" name="Apellido" id="apellido" placeholder="Gomez">
-
-        
-
-        <p>Feedback</p>
-        <textarea name="" id="" cols="38" rows="10">
-
-        </textarea>
-
-        <p>Estoy de acuerdo con los terminos y condiciones</p>
-        <input type="checkbox" name="" id="">
-        <input type="submit" value="Registrarse">
-
-    </form>
-</section>
+    <div class="col-6">
+     <form>
+      
+            <div class="mb-3">
+              <label for="" class="form-label">Motivo de la consulta</label>
+              <input type="seleccion" class="form-control" id="" aria-describedby="">
+              
+            </div>
+       
+        <div class="row">
+            <div class="col-6">
+        <div class="mb-3">
+          <label for="" class="form-label">Nombre</label>
+          <input type="seleccion" class="form-control" id="" aria-describedby="">
+          
+        </div>
+    </div>
     
+    <div class="col-6">
+        <div class="mb-3">
+          <label for="" class="form-label">Apellido</label>
+          <input type="seleccion" class="form-control" id="" aria-describedby="">
+          
+        </div>
+    </div>
+    </div>
+    
+<br>
+<div class="input-group">
+    <span class="input-group-text">Breve descripción</span>
+    <textarea class="form-control" aria-label="With textarea"></textarea>
+  </div>
+  <br><br><br>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Dirección de correo</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">Nunca lo compartiremos con nadie.</div>
+  </div>
+  <br> <br>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Acepto los terminos y condiciones.</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+    </div>
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+<img src="../img/barra.png" width="100%">
+<footer>
+    <center>
+      
+        <div class="col-3">
+          <img src="../img/Address.png">
+          <p class="inter-font">Albuquerque, New Mexico. 
+            303 Romero Street in Plaza Don Luis</p>
+        </div>
+        <div class="col-9">
+    <table>
+        
+        <tr>
+            <td class="iconos-footer"><a href="https://www.facebook.com/"><img src="../img/facebook.svg" alt="Facebook"></a></td>
+            <td class="iconos-footer"><a href="https://mail.google.com/"><img src="../img/mail.svg" alt="Gmail"></a></td>
+            <td class="iconos-footer"><a href="https://www.instagram.com/"><img src="../img/instagram.svg" alt="Instagram"></a></td>
+            <td class="iconos-footer"><a href="https://www.linkedin.com/"><img src="../img/linkedin.svg" alt="LinkedIn"></a></td>
+            
+        </tr>
+    
+    </table>
+  </div>
+
+  
+    </center>
+
+</footer>
+
 <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -104,22 +171,7 @@
 
 <!--Aca pongo las redes -->
 
-<footer>
-    <center>
-    <table>
-        
-        <tr>
-            <td><a href="https://www.facebook.com/"><img src="../img/facebook.svg" alt=""></a></td>
-            <td><a href="https://mail.google.com/"><img src="../img/mail.svg" alt=""></a></td>
-            <td><a href="https://www.instagram.com/"><img src="../img/instagram.svg" alt=""></a></td>
-            <td><a href="https://www.linkedin.com/"><img src="../img/linkedin.svg" alt=""></a></td>
-            
-        </tr>
-    
-    </table>
-    </center>
 
-</footer>
 
 </body>
 

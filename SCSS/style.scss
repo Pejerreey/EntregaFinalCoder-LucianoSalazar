@@ -1,7 +1,49 @@
 /* Variables */ 
-$hover-navbar: rgba(0, 56, 255, 1);
 $sizes: 20px, 30px, 40px, 50px, 70px, 80px;
 
+
+/* Keyframes */
+
+@keyframes aparecer{
+    0% {
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+
+.fade1 {
+    animation-duration: 2.5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    }
+
+    .fade2 {
+        animation-duration: 4.5s;
+        animation-name: aparecer;
+        animation-iteration-count: 1;
+        }
+
+        .fade3 {
+            animation-duration: 6.5s;
+            animation-name: aparecer;
+            animation-iteration-count: 1;
+            }
+
+            .fade4 {
+                animation-duration: 8.5s;
+                animation-name: aparecer;
+                animation-iteration-count: 1;
+                }
+
+
+                .fade5 {
+                    animation-duration: 10.5s;
+                    animation-name: aparecer;
+                    animation-iteration-count: 1;
+                    }
 
 /* Para las cajas */ 
 
@@ -55,26 +97,69 @@ $colors:(
 {
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 /* Botones */
+
+.btn-primary{
+
+    --bs-btn-bg: #ed732f;
+    --bs-btn-border-color: #ffffff;
+
+
+    
+}
 
 .botones {
 
 
 }
 
+/* Navbar*/
+
 .botones--navbar{
     @extend .botones
 }
 
+.navbartitulo{
 
+font-weight: 480;
+font-size:1.5em;
+color: #000000;
+    
+
+}
+
+
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: #ffffff00 !important;
+}
+
+.nav-link{
+    color: #333;
+    &:hover {
+      color: #c26732; 
+    }
+}
+
+.nav-link.disabled{
+
+    color: #2849b8;
+
+}
+
+/* modifico el header para transparencia */ 
 header {
 
+   z-index: 2;
     position:fixed;
-    background-color: white;
+    background-color: #ffffff7d;
     width: 100%;
     padding: 10px;
+    box-shadow: 0px 3px 0px #00000026;
     
 }
 
@@ -94,26 +179,28 @@ section h4 {
 /* Todo lo que tenga que ver con footer */ 
 
 footer {
-background-color: darkgray;
+background-color: rgb(255, 255, 255);
 width: 100%;
 }
 
-/* Imagenes de background con texto*/ 
-
-.portada{ 
-    background-position: 100%;
-    width:100%;
+.iconos-footer{
+    padding: 20px;
 }
+
+
+
 
 /* Index: Hamlin, portada*/
 
+
+
 .textoportada{
     
-    position: relative;
     text-align: center;
     color: white;
     background-color: darkgray;
   }
+
 /* texto central */ 
   .centered {
     position: absolute;
@@ -122,13 +209,106 @@ width: 100%;
   font-style: normal;
   font-weight: 300;
   font-size:4em;
+  z-index: 0;
   color:white;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
+
+
+ 
+
+  /* Imagenes del index, que estan en grid*/
+.img__wrap {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .img__img {
+    vertical-align: bottom;
+  }
+  
+  .img__description_layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #5f2c0e7e;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    transition: opacity .2s, visibility .2s;
+  }
+  
+  .img__wrap:hover .img__description_layer {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .img__description {
+    transition: .2s;
+    transform: translateY(1em);
+    text-align: center;
+  }
+  
+  .img__wrap:hover .img__description {
+    transform: translateY(0);
+  }
+
+  
+
+    .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      
+      }
+
+
+      .image-text {
+        position: absolute; 
+        bottom: 0; 
+        left: 0; 
+        width: 100%; 
+        color: white; 
+        background-color: rgba(0, 0, 0, 0.5); 
+        padding: 10px; 
+        text-align: center; 
+      }
+
+      .imagen-texto {
+        display: flex; /* Activa el modo flexbox */
+        flex-direction: column; /* Define la dirección de la columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        margin-bottom: 20px; /* Añade espacio entre las imágenes */
+      }
+
+
+
+
   /*mesa verde portada*/
+   .textoabajo{
+        position: absolute;
+      font-family: 'Inknut Antiqua';
+      font-family: 'Inknut Antiqua';
+      font-style: normal;
+      font-weight: 300;
+      font-size:2em;
+      background-color: black;
+      color:white;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+   }
+
+   
 
 
     .top-left {
@@ -142,13 +322,36 @@ width: 100%;
       
   
 
-  /* Porfolio: Mesa verde */
+ /* Clases para integrar fuentes de texto */
+
+  .inter-font{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    
+}
+
+.inkmut-font{
+    font-family: 'Inknut Antiqua';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    color:white;
+}
+
+/*Porfolio, CSS*/
+
+.porfolioTexto{
+    padding-left:10%;
+    padding-right:10%;
+}
 
 
     
 
 
-/* Responsive para texto central de Hamlin Hamlin & McGuill */
+/* Media Only para responsive de distintas pestañas */
 
 @media only screen and (max-width:1800px){
 
@@ -159,6 +362,11 @@ width: 100%;
 }
 
 @media only screen and (max-width:1600px){
+
+    .centered{
+
+        top:40%;
+    }
 
     .top-left{
 
@@ -172,6 +380,7 @@ width: 100%;
 @media only screen and (max-width:1450px){
     .centered{
         font-size: 3em;
+        top:30%;
     }
 
     .top-left{
@@ -184,6 +393,10 @@ width: 100%;
 }
 
 @media only screen and (max-width:1250px){
+    .centered{
+
+        top:30%;
+    }
 
     .top-left{
         font-size:1.7em;
@@ -205,6 +418,7 @@ width: 100%;
 
     .centered{
         font-size: 2em;
+        top: 20%;
     }
 
     .top-left{
@@ -230,6 +444,22 @@ width: 100%;
 
 }
 
+@media only screen and (max-width:470px){
+
+    .centered{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width:992px){
+
+    .navbartitulo{
+        display:none;
+    }
+
+}
+
 
 
 /* Clases que estan en Index*/ 
@@ -242,7 +472,6 @@ width: 100%;
 
 .objetivo h1{
 
-    font-family: 'Inknut Antiqua';
     font-size: 2em;
   font-family: 'Inknut Antiqua';
   font-style: normal;
@@ -251,6 +480,12 @@ width: 100%;
   color:white;
 
 }
+
+
+
+
+
+
 
 /* Aca adapte el tamaño del texto porque en un celular es demasiado grande*/
 
@@ -270,6 +505,11 @@ width: 100%;
 /* Texto que aparece en FAQs */ 
 
 .faqs{
+
+    padding-left:15%;
+    padding-right:15%;
+
+
     font-family: 'Inknut Antiqua';
     font-size: 2em;
   font-family: 'Inknut Antiqua';
